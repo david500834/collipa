@@ -49,6 +49,10 @@ sudo apt-get install memcached
 ```
 sudo apt-get install redis-server
 ```
+### ubuntu需要安装的其他程序
+```
+sudo apt-get install libtiff5-dev libjpeg8-dev zlib1g-dev libfreetype6-dev liblcms2-dev libwebp-dev tcl8.6-dev tk8.6-dev python-tk
+```
 
 ### 安装其他
 
