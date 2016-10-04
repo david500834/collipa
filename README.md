@@ -32,32 +32,22 @@ mv config.back.py config.py
 
 ## 安装必要扩展包
 
-### 安装 MySQL
+### 安装 lamp包
 
 ```
-sudo apt-get install mysql-server
+sudo apt-get install lamp-server^
 ```
 
-### 安装 memcached
-
-```
-sudo apt-get install memcached
-```
-
-### 安装 redis
-
-```
-sudo apt-get install redis-server
-```
 ### ubuntu需要安装的其他程序
 ```
-sudo apt-get install libtiff5-dev libjpeg8-dev zlib1g-dev libfreetype6-dev liblcms2-dev libwebp-dev tcl8.6-dev tk8.6-dev python-tk
+sudo apt-get install memcached redis-server libtiff5-dev libjpeg8-dev zlib1g-dev libfreetype6-dev liblcms2-dev libwebp-dev tcl8.6-dev tk8.6-dev python-tk python-dev libmysqlclient-dev     
+
 ```
 
 ### 安装其他
 
 ```
-sudo pip install -r requirements.txt
+sudo pip install -r requirements.txt  -i http://pypi.douban.com/simple/ 
 ```
 
 ## 初始化数据库
@@ -69,7 +59,7 @@ python setup.py --init
 ## 运行
 
 ```
-python app.py
+python manage.py app runserver
 ```
 
 ##License
